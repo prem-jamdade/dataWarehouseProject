@@ -15,7 +15,7 @@ IF OBJECT_ID('bronze.crm_cust_info', 'U') IS NOT NULL
 CREATE TABLE bronze.crm_cust_info(
 	cust_id INT,
 	cust_key VARCHAR(50),
-	cst_firsname VARCHAR(50),
+	cst_firstname VARCHAR(50),
 	cst_lastname VARCHAR(50),
 	cst_marital_status VARCHAR(50),  -- Expected values: M, S, etc.
 	cst_gender VARCHAR(50),          -- Expected values: M, F, O, etc.
