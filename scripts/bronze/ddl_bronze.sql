@@ -17,8 +17,8 @@ CREATE TABLE bronze.crm_cust_info(
 	cust_key VARCHAR(50),
 	cst_firsname VARCHAR(50),
 	cst_lastname VARCHAR(50),
-	cst_marital_status CHAR(1),  -- Expected values: M, S, etc.
-	cst_gender CHAR(1),          -- Expected values: M, F, O, etc.
+	cst_marital_status VARCHAR(50),  -- Expected values: M, S, etc.
+	cst_gender VARCHAR(50),          -- Expected values: M, F, O, etc.
 	cst_create_date DATE
 );
 
