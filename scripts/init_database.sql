@@ -17,4 +17,29 @@ WARNING:
     and ensure you have proper backups before running this script.
 */
 
+USE master 
+Go
 
+-- Drope and recreate the database 
+IF EXISTS (SELECT 1 FROM sys.databases WHERE name  = 'DataWareHouse')
+BEGIN 
+	ALTER DATABASE DataWareHouse set single_User with RollBack IMMEDIATE ;
+	DROP DATABASE DataWareHouse;
+END;
+GO
+
+-- Create the Database  
+CREATE DATABASE DataWareHouse;
+Go
+
+
+USE DataWareHouse;
+Go
+
+-- Creating Schema 
+
+CREATE SCHEMA bronze;
+Go
+CREATE SCHEMA silver;
+Go
+CREATE SCHEMA gold;
