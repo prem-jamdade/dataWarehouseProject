@@ -47,7 +47,7 @@ CREATE TABLE bronze.crm_sales_details(
 	sls_order_dt INT,            -- Likely a date represented as YYYYMMDD
 	sls_ship_dt  INT,            -- Same as above
 	sls_due_dt   INT,            -- Same as above
-	SLS_SALES    INT,
+	sls_sales    INT,
 	sls_quantity  INT,            
 	sls_price    INT             -- Unit price at time of sale
 );
