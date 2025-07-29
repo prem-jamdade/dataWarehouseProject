@@ -137,9 +137,9 @@ BEGIN
 				 ELSE CAST(CAST(sls_due_dt AS VARCHAR) AS DATE)
 			END,
 			-- Recalculate sales if values are null or inconsistent
-			CASE WHEN SLS_SALES IS NULL OR SLS_SALES <= 0 OR SLS_SALES != sls_quantity * ABS(sls_price)
+			CASE WHEN sls_sales IS NULL OR sls_sales <= 0 OR sls_sales != sls_quantity * ABS(sls_price)
 				THEN sls_quantity * ABS(sls_price)
-				ELSE SLS_SALES
+				ELSE sls_sales
 			END,
 			sls_quantity,
 			-- Correct price if invalid or inconsistent
