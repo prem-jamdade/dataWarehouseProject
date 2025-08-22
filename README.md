@@ -4,7 +4,7 @@ This project is designed to show how raw data from CRM and ERP systems is transf
 
 ## 📊 Project Overview
 
-In this project, we have built a **data warehouse system** by moving data through multiple layers – Bronze, Silver, and Gold – to finally create a **Sales Data Mart**.  
+In this project, I have built a **data warehouse system** by moving data through multiple layers – Bronze, Silver, and Gold – to finally create a **Sales Data Mart**.  
 This setup is ideal for businesses who want to understand **customer behaviour, product performance, and sales trends** in a structured way.
 
 ## 🧱 Data Layers (ETL Flow)
